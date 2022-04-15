@@ -18,6 +18,7 @@ import { ProductsComponent } from './admin/products/products.component';
 import { ShowproductsComponent } from './components/showproducts/showproducts.component';
 import { ShowproductComponent } from './components/showproduct/showproduct.component';
 import { OrdersComponent } from './admin/orders/orders.component';
+import { SubscriptionsComponent } from './components/subscriptions/subscriptions.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { OrdersComponent } from './admin/orders/orders.component';
     ProductsComponent,
     ShowproductsComponent,
     ShowproductComponent,
-    OrdersComponent
+    OrdersComponent,
+    SubscriptionsComponent
   ],
   imports: [
     BrowserModule,

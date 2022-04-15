@@ -15,7 +15,13 @@
                   <div class="single_product_text">
                       <h4>{{ product.name }}</h4>
                       <h3>{{ product.price | currency:"INR" }}</h3>
+                     <div *ngIf="product.instock == 'Yes' ">
                       <a  class="add_cart" routerLink="/showproducts/{{product._id}}">Buy Now</a>
+                     </div>
+                     <div>
+                      <a  class="add_cart" *ngIf="product.instock=='No'">Out Of Stock</a>
+
+                     </div>
                   </div>
               </div>
           </div>

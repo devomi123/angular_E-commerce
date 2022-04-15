@@ -30,9 +30,13 @@
           <p>
            {{data.descriptions}}
           </p>
-          <div class="card_area d-flex justify-content-between align-items-center">
+          <div class="card_area d-flex justify-content-between align-items-center" *ngIf="data.instock =='Yes'">
 
             <a  class="btn_3" (click)="show()">Buy Now</a>
+          </div>
+          <div class="card_area d-flex justify-content-between align-items-center">
+
+            <a  class="btn_3" *ngIf="data.instock=='No'" >Out Of Stock</a>
           </div>
         </div>
       </div>
